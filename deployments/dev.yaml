@@ -25,5 +25,5 @@ spec:
           securityContext:
             privileged: true
           volumeMounts:
-            - mountPath: /dev/git
+            - mountPath: /home/dev/git
               name: devv
