@@ -22,8 +22,8 @@ spec:
         - name: dev
           image: oonray/dev:latest
           imagePullPolicy: Always
-          securityContext:
-            privileged: true
           volumeMounts:
             - mountPath: /home/dev/git
               name: dev-vol
+          ports:
+            - containerPort: 22
