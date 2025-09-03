@@ -4,4 +4,6 @@ kind: Kustomization
 namespace: dev
 resources:
   - volumes/git.yaml
+  - ingress/ingress.yaml
+  - service/ssh.yaml
   - deployments/dev.yaml
