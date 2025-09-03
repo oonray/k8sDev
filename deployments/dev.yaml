@@ -15,9 +15,9 @@ spec:
         app: dev
     spec:
       volumes:
-        - name: devv
+        - name: dev-vol
           persistentVolumeClaim:
-            claimName: devvc
+            claimName: dev-vc
       containers:
         - name: dev
           image: oonray/dev:latest
@@ -26,4 +26,4 @@ spec:
             privileged: true
           volumeMounts:
             - mountPath: /home/dev/git
-              name: devv
+              name: dev-vol
